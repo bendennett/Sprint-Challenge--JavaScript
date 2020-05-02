@@ -1,13 +1,13 @@
 // 1. Copy and paste your prototype in here and refactor into class syntax.
 
 class CuboidMaker2{
-    constructor (object2) {
-    this.length = object2.length;
-    this.width = object2.width;
-    this.height = object2.height;}
+    constructor (Obj) {
+    this.length = Obj.length;
+    this.width = Obj.width;
+    this.height = Obj.height;}
 
     volume2() {
-      return (this.length * this.width * this.height);
+      return this.length * this.width * this.height;
     };
 
     surfaceArea2() {
@@ -18,7 +18,7 @@ class CuboidMaker2{
   const cuboid2 = new CuboidMaker2 ({
     length: 4,
     width: 5,
-    heigh: 5
+    height: 5
 });
 
 // Test your volume and surfaceArea methods by uncommenting the logs below:
